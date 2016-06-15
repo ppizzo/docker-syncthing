@@ -1,0 +1,13 @@
+version: '2'
+services:
+  syncthing:
+    image: ppizzo/syncthing
+    restart: always
+    ports:
+      - "8384:8384"
+      - "22000:22000"
+      - "21027:21027"
+    user: user
+    volumes:
+      - /data/home/pietro/.config/syncthing:/home/user/.config/syncthing
+      - /data/home/pietro/sync:/sync
