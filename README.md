@@ -3,9 +3,7 @@ Syncthing is an Open Source distributed file sharing solution. This repository c
 
 ## Build and Run
 
-For pre-built images, additional information and instruction on how to use this repository, please go to the following URL:
-
-https://hub.docker.com/r/ppizzo/syncthing/.
+For pre-built images, additional information and instruction on how to use this repository, please go to the following URL: https://hub.docker.com/r/ppizzo/syncthing/.
 
 ## References
 https://syncthing.net/
