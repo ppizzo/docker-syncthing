@@ -13,9 +13,7 @@ You should mount at least two volumes: one to hold the configuration, one to hol
 
 Start the container with ```docker-compose up -d``` command. At the first run, the application creates the required certificates and configuration files in the declared configuration directory. In order to access the web interface, you must open the ```config.xml``` file with a text editor and modify the content of the tag ```<address>``` included in the tag ```<gui>``` by changing the default ```127.0.0.1``` address with ```0.0.0.0``` or the internal IP of the container (if you want to access the web interface from localhost only). You must then restart the container in order for the changes to make effect.
 
-The web interface will be available at the following URL:
-
-http://localhost:8384/.
+The web interface will be available at the following URL: http://localhost:8384/.
 
 We recommend to switch to HTTPS protocol and set up an username and password for the web interface.
 
