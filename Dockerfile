@@ -13,4 +13,6 @@ RUN apt-get update && apt-get -y install apt-utils curl && curl -s https://synct
 
 EXPOSE 8384/tcp 22000/tcp 21027/udp
 
+USER user
+
 ENTRYPOINT ["syncthing", "-no-browser"]
