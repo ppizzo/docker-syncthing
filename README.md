@@ -1,6 +1,8 @@
 # Syncthing
 Syncthing is an Open Source distributed file sharing solution. This repository contains all the files needed to build and run Syntching inside a Docker container.
 
+[![](https://images.microbadger.com/badges/image/ppizzo/syncthing.svg)](https://microbadger.com/images/ppizzo/syncthing "Get your own image badge on microbadger.com")
+
 ## Build
 Pre-built images are available on the DockerHub, but if you want to build it by yourself, just grab the Dockerfile from the repository, modify to suit your needs and build the image using the standard ```docker build``` command.
 
