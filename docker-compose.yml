@@ -1,8 +1,7 @@
-version: '2'
+version: '3'
 services:
   syncthing:
     image: ppizzo/syncthing
-    restart: always
     ports:
       - "8384:8384"
       - "22000:22000"
@@ -11,3 +10,6 @@ services:
     volumes:
       - /data/home/pietro/.config/syncthing:/home/user/.config/syncthing
       - /data/home/pietro/sync:/sync
+    deploy:
+      restart_policy:
+        condition: on-failure
